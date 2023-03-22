@@ -1,0 +1,23 @@
+﻿<Window x:Class="Gomoku_wpf.Views.SettingView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gomoku_wpf.Views"
+        mc:Ignorable="d"
+        Title="Let's start!" Height="180" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <StackPanel Margin="10">
+            <GroupBox Margin="10" Header="">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <RadioButton x:Name="rbtn_me" Content="red first" IsChecked="True" Margin="10"/>
+                    <RadioButton x:Name="rbtn_computer" Content="black first" Margin="10"/>
+                </StackPanel>
+            </GroupBox>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                <Button x:Name="btn_ok" Click="btn_ok_Click" Width="80" Content="ok" Margin="10"/>
+                <Button x:Name="btn_cancel" Click="btn_cancel_Click" Width="80" Content="cancel" Margin="10"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

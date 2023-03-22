@@ -1,0 +1,21 @@
+﻿<!--Title="Gomoku (author:starwing)" Height="680" Width="622" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"-->
+    <Window x:Class="Gomoku_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gomoku_wpf" xmlns:views="clr-namespace:Gomoku_wpf.Views"
+        mc:Ignorable="d"
+        Title="Gomoku (author:starwing)" Height="680" Width="622" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <ToolBar Height="35">
+                <Button x:Name="btn_start" Content="start" Width="60"/>
+                <Separator/>
+                <Button Name="btn_exit" Content="exit" Width="60"/>
+            </ToolBar>
+        <views:GomokuBoardView x:Name="board"></views:GomokuBoardView>
+            
+        </StackPanel>
+    </Grid>
+</Window>
